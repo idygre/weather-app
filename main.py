@@ -27,7 +27,7 @@ if place:
 
             # Create a temperature plot
             figure = px.line(x=dates, y=temp, labels={"x": "Date", "y": "Temperature (C)"})
-            st.plotly_chart(figure)
+            st.plotly_chart(figure, use_container_width=True)
 
         if option == "Sky":
             images = {"Clear": "images/clear.png", "Clouds": "images/cloud.png",
